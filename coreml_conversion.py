@@ -16,7 +16,7 @@ import torchvision
 import json
 import cv2
 from PIL import Image
-from print_utils import *
+from utils.print_utils import *
 
 from espnetv2 import espnetv2_seg
 

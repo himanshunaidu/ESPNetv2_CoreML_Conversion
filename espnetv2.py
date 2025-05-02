@@ -4,7 +4,7 @@ from nn_layers.espnet_utils import *
 from nn_layers.efficient_pyramid_pool import EfficientPyrPool
 from nn_layers.efficient_pt import EfficientPWConv
 from eespnet import EESPNet
-from print_utils import *
+from utils.print_utils import *
 from torch.nn import functional as F
 
 
@@ -190,7 +190,7 @@ def espnetv2_seg(args):
     return model
 
 if __name__ == "__main__":
-    from utils import compute_flops, model_parameters
+    from utils.utils import compute_flops, model_parameters
     import torch
     import argparse
 
