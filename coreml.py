@@ -63,21 +63,16 @@ if __name__ == '__main__':
     parser.add_argument('--weight-path', default='', help='Pretrained weights directory.') # model/semantic_segmentation/model_zoo/espnetv2/espnetv2_s_2.0_city_512x256.pth
     parser.add_argument('--s', default=2.0, type=float, help='scale')
     # dataset details
-    parser.add_argument('--data-path', default="", help='Data directory') # datasets/cityscapes
     parser.add_argument('--dataset', default='city', choices=segmentation_datasets, help='Dataset name')
     # input details
     parser.add_argument('--im-size', type=int, nargs="+", default=[512, 256], help='Image size for testing (W x H)')
-    parser.add_argument('--split', default='val', choices=['train', 'val', 'test'], help='data split')
-    parser.add_argument('--batch-size', type=int, default=4, help='list of batch sizes')
-    parser.add_argument('--model-width', default=224, type=int, help='Model width')
-    parser.add_argument('--model-height', default=224, type=int, help='Model height')
     parser.add_argument('--channels', default=3, type=int, help='Input channels')
     parser.add_argument('--num-classes', default=1000, type=int,
                         help='ImageNet classes. Required for loading the base network')
     parser.add_argument('--fp16', action='store_true')
     parser.add_argument('--outpath', dest='out_pth', type=str,
-            default='./coreml/semantic_segmentation/model_zoo/')
-    parser.add_argument('--img-path', dest='img_path', type=str, default='./datasets/custom_images/test.jpg',)
+            default='./model_zoo/')
+    parser.add_argument('--img-path', dest='img_path', type=str, default='./data/test.jpg',)
     args = parser.parse_args()
 
     args.weights = ''
