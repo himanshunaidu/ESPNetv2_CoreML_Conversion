@@ -2,7 +2,7 @@ import torch
 from torch import nn
 import math
 from torch.nn import functional as F
-from model.semantic_segmentation.espnetv2.nn_layers.cnn_utils import CBR, BR, Shuffle
+from nn_layers.cnn_utils import CBR, BR, Shuffle
 
 class EfficientPyrPool(nn.Module):
     """Efficient Pyramid Pooling Module"""

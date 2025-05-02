@@ -1,6 +1,6 @@
 from torch import nn
 import math
-from model.semantic_segmentation.espnetv2.nn_layers.cnn_utils import CBR
+from nn_layers.cnn_utils import CBR
 
 class EfficientPWConv(nn.Module):
     def __init__(self, nin, nout):
