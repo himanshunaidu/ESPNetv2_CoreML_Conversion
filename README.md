@@ -2,6 +2,10 @@
 
 This directory contains the minimal code to convert ESPNetv2 to CoreML format. The conversion is done using the `coremltools` library, which provides a convenient way to convert PyTorch models to CoreML.
 
+## Environment Setup
+
+To set up the environment, you can use the provided `espnetv2_coreml_conversion.yml` file. This file contains all the necessary dependencies to run the conversion script.
+
 ## Command
 
 To convert the ESPNetv2 model to CoreML format, run the following command:
